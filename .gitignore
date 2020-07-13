@@ -145,3 +145,4 @@ dist
 .idea
 dump.rdb
 .vscode/
+local-env
