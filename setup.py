@@ -4,7 +4,7 @@ import os
 import runpy
 from setuptools import setup, find_packages
 
-PACKAGE_NAME = "aries_cloudagent"
+PACKAGE_NAME = "d8tam_poc_cloudagent"
 version_meta = runpy.run_path("./{}/version.py".format(PACKAGE_NAME))
 VERSION = version_meta["__version__"]
 
@@ -25,10 +25,10 @@ if __name__ == "__main__":
         version=VERSION,
         long_description=long_description,
         long_description_content_type="text/markdown",
-        url="https://github.com/hyperledger/aries-cloudagent-python",
+        url="https://github.com/d8tamgitadmin/d8tam-indy-cloud-agent-poc.git",
         packages=find_packages(),
         include_package_data=True,
-        package_data={"aries_cloudagent": ["requirements.txt"]},
+        package_data={"d8tam_poc_cloudagent": ["requirements.txt"]},
         install_requires=parse_requirements("requirements.txt"),
         tests_require=parse_requirements("requirements.dev.txt"),
         extras_require={
@@ -38,7 +38,6 @@ if __name__ == "__main__":
         python_requires=">=3.6.3",
         classifiers=[
             "Programming Language :: Python :: 3",
-            "License :: OSI Approved :: Apache Software License",
             "Operating System :: OS Independent",
         ],
         scripts=["bin/aca-py"],
